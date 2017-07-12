@@ -1,0 +1,342 @@
+/*********************************************** Style ************************************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url("../images/background.png");
+}
+#header{
+	background-image: url("../images/header.png");
+	height: 200px;
+	width: 100%;
+	color: #fff;
+}
+#header h1{
+	padding: 20px;
+	font-size: 44px;
+}
+#content{
+	width: 80%;
+	margin: -75px auto 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+.cnt-header{
+	background-color: #1293EE;
+	color: #fff;
+	position: relative;
+}
+.breadcrumbs{
+	padding: 20px;
+}
+.breadcrumbs h3{
+	text-align: center;
+}
+.breadcrumbs h2{
+	padding: 5px;
+}
+.breadcrumbs a{
+	text-decoration: none;
+	color: #fff;
+}
+.breadcrumbs a:hover{
+	text-decoration: underline;
+}
+#btn-signup{
+	float: right;
+	font-size: 22px;
+	text-decoration: none;
+	color: #dae4f5;
+	margin-top: -20px;
+}
+#btn-signup:hover{
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.btn-profile{
+	float: right;
+	font-size: 22px;
+	text-decoration: none;
+	color: #fff;
+	margin-top: -20px;
+}
+.cnt-body{
+	min-height: 400px;
+	background-color: #fff;
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+}
+#cnt-bg{
+	position: absolute;
+}
+.cnt-wrap{
+	z-index: 99;
+	display: inline-flex;
+}
+.cnt-wrap-signup{
+	margin: 10px auto;
+	width: 60%;
+}
+.cnt-wrap-table{
+	overflow-x: auto;
+	width: 90%;
+	margin: 50px auto;
+}
+.cnt-success{
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+.cnt-success h1{
+	padding: 20px;
+}
+.intro-text{
+	width: 60%;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+	padding: 50px 0;
+}
+.intro-text h1{
+	text-align: center;
+	padding: 20px;
+	font-size: 3em;
+}
+.sign-in{
+	width: 40%;
+	padding: 20px;
+}
+.form dt{
+	padding: 10px;
+}
+.form{
+	width: 100%;
+	padding: 20px;
+}
+.text-center{
+	text-align: center;
+}
+.form-control input[type='text'], .form-control input[type='password'], .form-control input[type='file'], .form-control input[type='number'], select{
+	line-height: 20px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+    padding: 10px;
+    width: 70%;
+}
+select{
+	font-size: 16px;
+	font-weight: 400;
+	width: 74%;
+}
+.form-control input[type='submit']{
+	line-height: 20px;
+    color: #333;
+    font-weight: bold;
+    vertical-align: middle;
+    background-color: #DEB132;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+    padding: 10px;
+    width: 74%;
+}
+.form-control input[type='submit']:hover {
+	cursor: pointer;
+	color: #fff;
+}
+.form-control label{
+	font-size: 18px;
+	font-weight: 600;
+	margin-right: 200px;
+}
+.error{
+	color: #F55656;
+	/*text-shadow: 1px 1px 1px #333;*/
+	text-align: center;
+	font-size: 24px;
+}
+.success{
+	color: #377B31;
+	/*text-shadow: 1px 1px 1px #333;*/
+	text-align: center;
+	font-size: 24px;
+}
+#info{
+	padding: 0px 2px;
+	font-size: 12px;
+	color: #1293EE;
+}
+#info:hover{
+	cursor: pointer;
+}
+#genPin{
+	padding: 0px 5px;
+	font-size: 12px;
+	color: #1293EE;
+}
+#genPin:hover{
+	cursor: pointer;
+}
+.btn-view{
+	padding: 2px 6px;
+}
+.btn-view:hover{
+	cursor: pointer;
+}
+.btn-edit{
+	padding: 5px 15px;
+	background-color: #7E91B2;
+	color: #000;
+}
+.btn-edit:hover{
+	cursor: pointer;
+	color: #fff;
+}
+#confirmBox{
+	height: 75px;
+	width: 15%;
+	margin: 1px 40%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: -300px;
+	text-align:  center;
+	font-size: 24px;
+	padding: 20px;
+}
+#menu{
+	height: 150px;
+	top: 25px;
+	right: 50px;
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+}
+#menu li ul{
+	background-color: rgba(222, 222, 222, .95);
+	display: none;
+	position: absolute;
+	width: 200px;
+	right: 0px;
+	z-index: 9999;
+}
+#menu ul, #menu li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#menu li li{
+	text-align: center;
+	list-style-type: none;
+	padding: 15px;
+	line-height: 30px;
+}
+#menu li li:hover{
+	background-color: #7E91B2;
+	cursor: pointer;
+	color: #fff;
+}
+#menu li a{
+	text-decoration: none;
+	color: #333;
+}
+#menu-image{
+	margin-bottom: -5px;	
+}
+#menu-image:hover{
+	cursor: pointer;
+}
+/************************************************************Dashboard********************************************************/
+.dashset-wrap{
+	width: 100%;
+	margin-bottom: 50px; 
+}
+.dashset-cover{
+	width: 100%;
+	margin: 1px auto;
+}
+.dashset{
+    height: 200px;
+    background-color: #fff;
+    width: 40%;
+    margin: 50px 5% 0 5%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    float: left;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+.dashset1{
+    margin: 50px 30% 0 30%;
+}
+.dashset a{
+	text-decoration: none;
+	color: #551A8B;
+}
+.dashset:hover{
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.8);
+	background-color: #fd0;
+}
+.upperset{
+	width: 100%;
+	background-color: #7E91B2;
+	height: 125px;
+}
+.lowerset{
+	height: 75px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+.lowerset span{
+	font-weight: 600;
+	font-size: 28px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: #7E91B2;
+    color: white;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover{background-color:#fd0;}
+.user-img{
+	float: left;
+	margin: 0 40px 20px 0;
+	border: 2px solid #ccc;
+}
+.user-details{
+	font-size: 22px;
+	font-weight: 400;
+}
+.user-details dt{
+	padding: 5px;
+}
+.heading{
+	clear: both;
+}
+/************************************************************Media********************************************************/
+@media screen and (max-width: 480px) {
+    .intro-text h1{
+		padding: 5px;
+		font-size: 1.5em;
+	}
+	.form-control input[type='text'], .form-control input[type='password'], .form-control input[type='file'], .form-control input[type='number'], select{
+	    width: 100%;
+	}
+	.form-control input[type='submit']{
+	    width: 100%;
+	}
+}
